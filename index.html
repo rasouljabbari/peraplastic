@@ -1,0 +1,1029 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pera Plastic</title>
+    <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/icomoon.min.css">
+    <link rel="stylesheet" href="assets/css/icomoon_custom.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+</div>
+
+<div id="wrapper">
+    <div class="overlay"></div>
+
+    <!--    Menu when device size > 768.01 px-->
+    <nav class="navbar z-index-1 d-none d-lg-flex navbar-expand-md navbar-light bg-light dv-custom-navbar">
+        <div class="dv-custom-px d-flex">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" class="img-fluid me-3" alt="pera plastic">
+                <span>Pera Plastic</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="announcements.html">Announcements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <div class="dropdown dv-language-select">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        language
+                    </a>
+                    <ul class="dropdown-menu px-0" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/flag-iran.png" class="img-fluid me-3" width="30" alt="Persian">
+                                <span>FA</span>
+                            </div>
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/flag-united-kingdom.png" class="img-fluid me-3" width="30"
+                                     alt="United Kingdom">
+                                <span>EN</span>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Sidebar when device size < 768px -->
+    <nav class="navbar z-index-1 d-lg-none navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" class="img-fluid" alt="pera plastic">
+                    </a>
+                </div>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="announcements.html">Announcements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+        </ul>
+<!--        <div class="dropdown dv-language-select">-->
+<!--            <a class="dropdown-toggle" href="#" id="mobileNavbarDropdown" role="button" data-bs-toggle="dropdown"-->
+<!--               aria-expanded="false">-->
+<!--                language-->
+<!--            </a>-->
+<!--            <ul class="dropdown-menu px-0" aria-labelledby="mobileNavbarDropdown">-->
+<!--                <li><a class="dropdown-item" href="#">-->
+<!--                    <div class="d-flex align-items-center">-->
+<!--                        <img src="assets/images/flag-iran.png" class="img-fluid me-3" width="30" alt="Persian">-->
+<!--                        <span>FA</span>-->
+<!--                    </div>-->
+<!--                </a></li>-->
+<!--                <li><a class="dropdown-item" href="#">-->
+<!--                    <div class="d-flex align-items-center">-->
+<!--                        <img src="assets/images/flag-united-kingdom.png" class="img-fluid me-3" width="30"-->
+<!--                             alt="United Kingdom">-->
+<!--                        <span>EN</span>-->
+<!--                    </div>-->
+<!--                </a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+    </nav>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="d-flex w-100 dv-menu-in-mobile d-lg-none">
+            <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <div class="sidebar-brand ms-auto">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" class="img-fluid" alt="pera plastic">
+                </a>
+            </div>
+        </div>
+
+        <div class="dv-header-top-banner">
+            <div class="dv-custom-px">
+                <div class="row">
+                    <div class="col-md-6 col-xl-4 col-xxl-3 dv-banner-title z-index-2">
+                        <h1 class="text-light">
+                            Building Up <strong class="dv-text-green">Vision</strong> ,
+                            Leading Future
+                        </h1>
+                        <p class="text-light mb-3 mb-md-5">
+                            We offer the most complete industrial solutions in the country,
+                            for the research, design and development of materials.
+                        </p>
+                        <div class="d-flex">
+                            <a href="#" class="dv-top-green-btn me-3">Our Solutions</a>
+                            <a href="#" class="dv-top-white-btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        Section Name : Export to different parts of the world-->
+        <div class="dv-light-space-between-sections"></div>
+        <div class="dv-custom-pl dv-custom-mt-export">
+            <div class="row px-0 g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h2 class="mb-3">
+                        Export to different parts
+                        of the world
+                    </h2>
+                    <div class="d-flex align-items-center">
+                        <span class="dv-mini-border me-1"></span>
+                        <span class="dv-large-border"></span>
+                    </div>
+                    <p class="dv-different-part-p pt-4 pb-2">
+                        We Export factory products to more than
+                        7 different countries
+                    </p>
+                    <a href="#" class="dv-read-more-btn dv-top-green-btn">
+                        <span class="pe-3">Read More</span>
+                        <span class="icon-arrow-right8"></span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-9 dv-d-flex">
+                    <img src="assets/images/map-arrow.png" class="img-fluid" alt="pera plastic">
+                </div>
+            </div>
+        </div>
+
+        <!--        Section Name : Export to different parts of the world-->
+        <div class="dv-light-space-between-sections"></div>
+        <div class="dv-custom-pl">
+            <div class="row px-0 g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center me-2">
+                            <span class="dv-mini-border me-1"></span>
+                            <span class="dv-large-border"></span>
+                        </div>
+                        <span class="dv-index-section-title">
+                            Our products
+                        </span>
+                    </div>
+                    <h2>Products</h2>
+                    <p class="dv-different-part-p pt-4 pb-2">
+                        Lorem ipsum dolor sit amet,
+                        ullamcorper mattis, pulvinar
+                        Write short that will describe
+                    </p>
+                    <a href="products.html" class="dv-read-more-btn dv-top-green-btn">
+                        <span class="pe-3">See All Products</span>
+                        <span class="icon-arrow-right8"></span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-9 dv-d-flex">
+                    <div class="swiper indexProductsSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/products.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/products.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/products.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/products.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/products.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/products.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/products.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/products.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/products.png" alt="product image">
+                                </a>
+                            </div>
+                        </div>
+                        <!--                        <div class="swiper-pagination"></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        Section Name : black section  to different parts of the world-->
+        <div class="dv-light-space-between-sections"></div>
+        <div class="dv-dark-bg-world-map mt-3">
+            <div class="row px-0 g-4">
+                <div class="col-12 col-md-6">
+                    <div class="dv-map-flag-img">
+                        <img src="assets/images/map-flag.png" class="img-fluid" alt="pera plastic">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 pe-md-5">
+                    <div class="px-4 px-md-0">
+                        <h3 class="text-light dv-dark-bg-h4">
+                            DREAM IT, WE CAN<br/>
+                            BUILD IT
+                        </h3>
+                        <p class="text-light dv-dark-bg-p mb-5">
+                            We strive to consistently exceed customer expectations and create innovative
+                            solutions to fit any need. Keeping up with new trends and market demands
+                            while combining our technical and artistic expertise.
+                        </p>
+                        <div class="dv-d-flex mb-5">
+                            <div class="dv-dark-bg-square">
+                                <div class="dv-d-flex flex-column">
+                                    <span class="dv-dark-bg-number">800</span>
+                                    <span class="dv-dark-bg-text">Projects <br/> Completed</span>
+                                </div>
+                            </div>
+                            <div class="dv-dark-bg-square mx-4">
+                                <div class="dv-d-flex flex-column">
+                                    <span class="dv-dark-bg-number">681</span>
+                                    <span class="dv-dark-bg-text">Satisfied <br/> Clients</span>
+                                </div>
+                            </div>
+                            <div class="dv-dark-bg-square">
+                                <div class="dv-d-flex flex-column">
+                                    <span class="dv-dark-bg-number">999</span>
+                                    <span class="dv-dark-bg-text">Metal <br/> Works</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        Section Name : Certificate-->
+        <div class="dv-light-space-between-sections"></div>
+        <div class="dv-custom-pl">
+            <div class="row px-0 g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center me-2">
+                            <span class="dv-mini-border me-1"></span>
+                            <span class="dv-large-border"></span>
+                        </div>
+                        <span class="dv-index-section-title">
+                            Our honors
+                        </span>
+                    </div>
+                    <h2>Statues and honors</h2>
+                    <p class="dv-different-part-p pt-4 pb-2">
+                        Lorem ipsum dolor sit amet,
+                        ullamcorper mattis, pulvinar
+                        Write short that will describe
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-9 dv-d-flex">
+                    <div class="swiper indexCertificateSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/certificate-green.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/certificate-green.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/certificate-light.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/certificate-green.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/certificate-light.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/certificate-green.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/certificate-light.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/certificate-green.png" alt="product image">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <img src="assets/images/certificate-light.png" alt="product image">
+                                </a>
+                            </div>
+                        </div>
+                        <!--                        <div class="swiper-pagination"></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        Section Name : Blog-->
+        <div class="dv-light-space-between-sections"></div>
+        <div class="dv-light-space-between-sections"></div>
+        <div class="dv-custom-px">
+            <div class="row px-0 g-4">
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center me-2">
+                            <span class="dv-mini-border me-1"></span>
+                            <span class="dv-large-border"></span>
+                        </div>
+                        <span class="dv-index-section-title">
+                            OUR BLOG
+                        </span>
+                    </div>
+                    <h2>Latest News & Blog</h2>
+                </div>
+                <div class="col-12">
+                    <div class="swiper indexBlogSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <div class="dv-blog-card">
+                                        <div class="dv-blog-card-image">
+                                            <img src="assets/images/blog-post.png" class="img-cover" alt="">
+                                        </div>
+                                        <div class="dv-blog-card-body position-relative">
+                                            <div class="dv-blog-date-section dv-d-flex">
+                                                <span class="dv-blog-square"></span>
+                                                <span>7 march 2022</span>
+                                            </div>
+                                            <h6 class="mb-3">Cras ornare dapibus pulvina
+                                                mauris volutpat.</h6>
+                                            <p class="dv-gray mb-4">
+                                                Lorem ipsum dolor sit amet, ullamcorper
+                                                mattis, pulvinar Write short that will
+                                            </p>
+                                            <a href="blog-info.html"
+                                               class="dv-blog-read-more d-flex flex-column align-items-start">
+                                                <span class="mb-2">READ MORE</span>
+                                                <span class="dv-blog-line-under-link"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <div class="dv-blog-card">
+                                        <div class="dv-blog-card-image">
+                                            <img src="assets/images/blog-post.png" class="img-cover" alt="">
+                                        </div>
+                                        <div class="dv-blog-card-body position-relative">
+                                            <div class="dv-blog-date-section dv-d-flex">
+                                                <span class="dv-blog-square"></span>
+                                                <span>7 march 2022</span>
+                                            </div>
+                                            <h6 class="mb-3">Cras ornare dapibus pulvina
+                                                mauris volutpat.</h6>
+                                            <p class="dv-gray mb-4">
+                                                Lorem ipsum dolor sit amet, ullamcorper
+                                                mattis, pulvinar Write short that will
+                                            </p>
+                                            <a href="blog-info.html"
+                                               class="dv-blog-read-more d-flex flex-column align-items-start">
+                                                <span class="mb-2">READ MORE</span>
+                                                <span class="dv-blog-line-under-link"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <div class="dv-blog-card">
+                                        <div class="dv-blog-card-image">
+                                            <img src="assets/images/blog-post.png" class="img-cover" alt="">
+                                        </div>
+                                        <div class="dv-blog-card-body position-relative">
+                                            <div class="dv-blog-date-section dv-d-flex">
+                                                <span class="dv-blog-square"></span>
+                                                <span>7 march 2022</span>
+                                            </div>
+                                            <h6 class="mb-3">Cras ornare dapibus pulvina
+                                                mauris volutpat.</h6>
+                                            <p class="dv-gray mb-4">
+                                                Lorem ipsum dolor sit amet, ullamcorper
+                                                mattis, pulvinar Write short that will
+                                            </p>
+                                            <a href="blog-info.html"
+                                               class="dv-blog-read-more d-flex flex-column align-items-start">
+                                                <span class="mb-2">READ MORE</span>
+                                                <span class="dv-blog-line-under-link"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <div class="dv-blog-card">
+                                        <div class="dv-blog-card-image">
+                                            <img src="assets/images/blog-post.png" class="img-cover" alt="">
+                                        </div>
+                                        <div class="dv-blog-card-body position-relative">
+                                            <div class="dv-blog-date-section dv-d-flex">
+                                                <span class="dv-blog-square"></span>
+                                                <span>7 march 2022</span>
+                                            </div>
+                                            <h6 class="mb-3">Cras ornare dapibus pulvina
+                                                mauris volutpat.</h6>
+                                            <p class="dv-gray mb-4">
+                                                Lorem ipsum dolor sit amet, ullamcorper
+                                                mattis, pulvinar Write short that will
+                                            </p>
+                                            <a href="blog-info.html"
+                                               class="dv-blog-read-more d-flex flex-column align-items-start">
+                                                <span class="mb-2">READ MORE</span>
+                                                <span class="dv-blog-line-under-link"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <div class="dv-blog-card">
+                                        <div class="dv-blog-card-image">
+                                            <img src="assets/images/blog-post.png" class="img-cover" alt="">
+                                        </div>
+                                        <div class="dv-blog-card-body position-relative">
+                                            <div class="dv-blog-date-section dv-d-flex">
+                                                <span class="dv-blog-square"></span>
+                                                <span>7 march 2022</span>
+                                            </div>
+                                            <h6 class="mb-3">Cras ornare dapibus pulvina
+                                                mauris volutpat.</h6>
+                                            <p class="dv-gray mb-4">
+                                                Lorem ipsum dolor sit amet, ullamcorper
+                                                mattis, pulvinar Write short that will
+                                            </p>
+                                            <a href="blog-info.html"
+                                               class="dv-blog-read-more d-flex flex-column align-items-start">
+                                                <span class="mb-2">READ MORE</span>
+                                                <span class="dv-blog-line-under-link"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <div class="dv-blog-card">
+                                        <div class="dv-blog-card-image">
+                                            <img src="assets/images/blog-post.png" class="img-cover" alt="">
+                                        </div>
+                                        <div class="dv-blog-card-body position-relative">
+                                            <div class="dv-blog-date-section dv-d-flex">
+                                                <span class="dv-blog-square"></span>
+                                                <span>7 march 2022</span>
+                                            </div>
+                                            <h6 class="mb-3">Cras ornare dapibus pulvina
+                                                mauris volutpat.</h6>
+                                            <p class="dv-gray mb-4">
+                                                Lorem ipsum dolor sit amet, ullamcorper
+                                                mattis, pulvinar Write short that will
+                                            </p>
+                                            <a href="blog-info.html"
+                                               class="dv-blog-read-more d-flex flex-column align-items-start">
+                                                <span class="mb-2">READ MORE</span>
+                                                <span class="dv-blog-line-under-link"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <div class="dv-blog-card">
+                                        <div class="dv-blog-card-image">
+                                            <img src="assets/images/blog-post.png" class="img-cover" alt="">
+                                        </div>
+                                        <div class="dv-blog-card-body position-relative">
+                                            <div class="dv-blog-date-section dv-d-flex">
+                                                <span class="dv-blog-square"></span>
+                                                <span>7 march 2022</span>
+                                            </div>
+                                            <h6 class="mb-3">Cras ornare dapibus pulvina
+                                                mauris volutpat.</h6>
+                                            <p class="dv-gray mb-4">
+                                                Lorem ipsum dolor sit amet, ullamcorper
+                                                mattis, pulvinar Write short that will
+                                            </p>
+                                            <a href="blog-info.html"
+                                               class="dv-blog-read-more d-flex flex-column align-items-start">
+                                                <span class="mb-2">READ MORE</span>
+                                                <span class="dv-blog-line-under-link"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <div class="dv-blog-card">
+                                        <div class="dv-blog-card-image">
+                                            <img src="assets/images/blog-post.png" class="img-cover" alt="">
+                                        </div>
+                                        <div class="dv-blog-card-body position-relative">
+                                            <div class="dv-blog-date-section dv-d-flex">
+                                                <span class="dv-blog-square"></span>
+                                                <span>7 march 2022</span>
+                                            </div>
+                                            <h6 class="mb-3">Cras ornare dapibus pulvina
+                                                mauris volutpat.</h6>
+                                            <p class="dv-gray mb-4">
+                                                Lorem ipsum dolor sit amet, ullamcorper
+                                                mattis, pulvinar Write short that will
+                                            </p>
+                                            <a href="blog-info.html"
+                                               class="dv-blog-read-more d-flex flex-column align-items-start">
+                                                <span class="mb-2">READ MORE</span>
+                                                <span class="dv-blog-line-under-link"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="products.html">
+                                    <div class="dv-blog-card">
+                                        <div class="dv-blog-card-image">
+                                            <img src="assets/images/blog-post.png" class="img-cover" alt="">
+                                        </div>
+                                        <div class="dv-blog-card-body position-relative">
+                                            <div class="dv-blog-date-section dv-d-flex">
+                                                <span class="dv-blog-square"></span>
+                                                <span>7 march 2022</span>
+                                            </div>
+                                            <h6 class="mb-3">Cras ornare dapibus pulvina
+                                                mauris volutpat.</h6>
+                                            <p class="dv-gray mb-4">
+                                                Lorem ipsum dolor sit amet, ullamcorper
+                                                mattis, pulvinar Write short that will
+                                            </p>
+                                            <a href="blog-info.html"
+                                               class="dv-blog-read-more d-flex flex-column align-items-start">
+                                                <span class="mb-2">READ MORE</span>
+                                                <span class="dv-blog-line-under-link"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--                        <div class="swiper-pagination"></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        Section Name : OUR members-->
+        <div class="dv-light-space-between-sections"></div>
+        <div class="dv-custom-px">
+            <div class="row px-0 g-4">
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center me-2">
+                            <span class="dv-mini-border me-1"></span>
+                            <span class="dv-large-border"></span>
+                        </div>
+                        <span class="dv-index-section-title">
+                            OUR members
+                        </span>
+                    </div>
+                    <h2>Management members</h2>
+                </div>
+                <div class="col-12">
+                    <div class="swiper indexMemberSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!--                                <a href="products.html">-->
+                                <div class="dv-member-card position-relative">
+                                    <div class="dv-member-card-image">
+                                        <img src="assets/images/manage-director.png" class="img-cover"
+                                             alt="pera plastic"/>
+                                    </div>
+                                    <div class="dv-member-card-body d-flex flex-column justify-content-center">
+                                        <div class="dv-member-card-body-image">
+                                            <img src="assets/images/member.png" class="img-cover" alt="pera plastic">
+                                        </div>
+                                        <div class="d-flex dv-member-card-body-text">
+                                            <div class="d-flex flex-column dv-member-social-media">
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-facebook"></span>
+                                                </div>
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-twitter"></span>
+                                                </div>
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-linkedin"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-column justify-content-center dv-member-info">
+                                                <h6>Rasoul Jabbari</h6>
+                                                <span class="dv-our-user-info">Industry Expert</span>
+                                                <span class="dv-member-green-divider"></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="dv-member-card position-relative">
+                                    <div class="dv-member-card-image">
+                                        <img src="assets/images/manage-director.png" class="img-cover"
+                                             alt="pera plastic"/>
+                                    </div>
+                                    <div class="dv-member-card-body d-flex flex-column justify-content-center">
+                                        <div class="dv-member-card-body-image">
+                                            <img src="assets/images/member.png" class="img-cover" alt="pera plastic">
+                                        </div>
+                                        <div class="d-flex dv-member-card-body-text">
+                                            <div class="d-flex flex-column dv-member-social-media">
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-facebook"></span>
+                                                </div>
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-twitter"></span>
+                                                </div>
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-linkedin"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-column justify-content-center dv-member-info">
+                                                <h6>Rasoul Jabbari</h6>
+                                                <span class="dv-our-user-info">Industry Expert</span>
+                                                <span class="dv-member-green-divider"></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!--                                <a href="products.html">-->
+                                <div class="dv-member-card position-relative">
+                                    <div class="dv-member-card-image">
+                                        <img src="assets/images/manage-director.png" class="img-cover"
+                                             alt="pera plastic"/>
+                                    </div>
+                                    <div class="dv-member-card-body d-flex flex-column justify-content-center">
+                                        <div class="dv-member-card-body-image">
+                                            <img src="assets/images/member.png" class="img-cover" alt="pera plastic">
+                                        </div>
+                                        <div class="d-flex dv-member-card-body-text">
+                                            <div class="d-flex flex-column dv-member-social-media">
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-facebook"></span>
+                                                </div>
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-twitter"></span>
+                                                </div>
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-linkedin"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-column justify-content-center dv-member-info">
+                                                <h6>Rasoul Jabbari</h6>
+                                                <span class="dv-our-user-info">Industry Expert</span>
+                                                <span class="dv-member-green-divider"></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="dv-member-card position-relative">
+                                    <div class="dv-member-card-image">
+                                        <img src="assets/images/manage-director.png" class="img-cover"
+                                             alt="pera plastic"/>
+                                    </div>
+                                    <div class="dv-member-card-body d-flex flex-column justify-content-center">
+                                        <div class="dv-member-card-body-image">
+                                            <img src="assets/images/member.png" class="img-cover" alt="pera plastic">
+                                        </div>
+                                        <div class="d-flex dv-member-card-body-text">
+                                            <div class="d-flex flex-column dv-member-social-media">
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-facebook"></span>
+                                                </div>
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-twitter"></span>
+                                                </div>
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-linkedin"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-column justify-content-center dv-member-info">
+                                                <h6>Rasoul Jabbari</h6>
+                                                <span class="dv-our-user-info">Industry Expert</span>
+                                                <span class="dv-member-green-divider"></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!--                                <a href="products.html">-->
+                                <div class="dv-member-card position-relative">
+                                    <div class="dv-member-card-image">
+                                        <img src="assets/images/manage-director.png" class="img-cover"
+                                             alt="pera plastic"/>
+                                    </div>
+                                    <div class="dv-member-card-body d-flex flex-column justify-content-center">
+                                        <div class="dv-member-card-body-image">
+                                            <img src="assets/images/member.png" class="img-cover" alt="pera plastic">
+                                        </div>
+                                        <div class="d-flex dv-member-card-body-text">
+                                            <div class="d-flex flex-column dv-member-social-media">
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-facebook"></span>
+                                                </div>
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-twitter"></span>
+                                                </div>
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-linkedin"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-column justify-content-center dv-member-info">
+                                                <h6>Rasoul Jabbari</h6>
+                                                <span class="dv-our-user-info">Industry Expert</span>
+                                                <span class="dv-member-green-divider"></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="dv-member-card position-relative">
+                                    <div class="dv-member-card-image">
+                                        <img src="assets/images/manage-director.png" class="img-cover"
+                                             alt="pera plastic"/>
+                                    </div>
+                                    <div class="dv-member-card-body d-flex flex-column justify-content-center">
+                                        <div class="dv-member-card-body-image">
+                                            <img src="assets/images/member.png" class="img-cover" alt="pera plastic">
+                                        </div>
+                                        <div class="d-flex dv-member-card-body-text">
+                                            <div class="d-flex flex-column dv-member-social-media">
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-facebook"></span>
+                                                </div>
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-twitter"></span>
+                                                </div>
+                                                <div class="dv-member-social mb-2">
+                                                    <span class="icon-linkedin"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-column justify-content-center dv-member-info">
+                                                <h6>Rasoul Jabbari</h6>
+                                                <span class="dv-our-user-info">Industry Expert</span>
+                                                <span class="dv-member-green-divider"></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                        <div class="swiper-pagination"></div>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="dv-light-space-between-sections"></div>
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="dv-footer-top">
+        <div class="dv-custom-px">
+            <div class="row g-3">
+                <div class="col-12 col-lg-4">
+                    <div class="dv-footer-logo mx-auto mx-lg-0">
+                        <img src="assets/images/logo.png" class="img-fluid" alt="pera plastic">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="row g-0">
+                        <div class="col-12 col-lg-6 p-0">
+                            <div class="d-flex flex-column align-items-center">
+                                <span class="dv-sign-up-text mb-4">SIGN UP OUR</span>
+                                <h2 class="dv-footer-h2-title">Newsletter</h2>
+
+                                <form class="dv-footer-form justify-content-center input-group">
+                                    <input type="email" name="email" class="dv-footer-input" placeholder="your Email">
+                                    <button type="submit" class="dv-footer-button">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 class="dv-footer-list-title">SERVICES</h3>
+                    <ul class="dv-footer-list">
+                        <li class="dv-service-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-arrow-right13 dv-service-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Steel works</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dv-service-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-arrow-right13 dv-service-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Plastic</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dv-service-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-arrow-right13 dv-service-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Polymer Compaunds</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 class="dv-footer-list-title">GET IN TOUCH</h3>
+                    <ul class="dv-footer-list">
+                        <li class="dv-location-item">
+                            <div class="d-flex align-items-start">
+                                <span class="icon-pin-48 dv-location-item-icon pe-2"></span>
+                                <span class="dv-service-item-title w-100 w-lg-75">3531 Medical Center Drive Fort Myers, FL 33901</span>
+                            </div>
+                        </li>
+                        <li class="dv-location-item">
+                            <div class="d-flex align-items-center">
+                                <span class="icon-phone2 dv-location-item-icon pe-2"></span>
+                                <span class="dv-service-item-title">1-800-123-4567</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 class="dv-footer-list-title">Social Media</h3>
+                    <ul class="dv-footer-list">
+                        <li class="dv-social-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-instagram_icon dv-social-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Instagram</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dv-social-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-x33_35-telegram dv-social-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Telegram</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dv-social-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-linkedin_network_social-network_linkedin-logo_icon dv-social-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Linkedin</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 class="dv-footer-list-title">WORKING HOURS</h3>
+                    <ul class="dv-footer-list">
+                        <li class="dv-social-item">
+                            <div class="d-flex align-items-center">
+                                <span class="dv-service-item-day">Weekdays</span>
+                                <span class="dv-service-item-time"> 8:00 - 20:00</span>
+                            </div>
+                        </li>
+                        <li class="dv-social-item">
+                            <div class="d-flex align-items-center">
+                                <span class="dv-service-item-day">Saturdays</span>
+                                <span class="dv-service-item-time"> 8:00 - 20:00</span>
+                            </div>
+                        </li>
+                        <li class="dv-social-item">
+                            <div class="d-flex align-items-center">
+                                <span class="dv-service-item-day">Holidays</span>
+                                <span class="dv-service-item-time"> Closed </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dv-footer-copyright w-100">
+        <div class="dv-custom-px">
+            <p class="dv-copyright-text mb-0">
+                © COPYRIGHT 2022. ALL RIGHTS RESERVED
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
