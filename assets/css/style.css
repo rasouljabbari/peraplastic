@@ -3,15 +3,78 @@
     --custom-gray: #757575;
 }
 
+/*iranyekan*/
 @font-face {
     font-family: iranyekan;
     src: url(../../assets/fonts/iran-yekan/ttf/iranyekanwebregularfanum.ttf) format("ttf"), url(../../assets/fonts/iran-yekan/woff/iranyekanwebregularfanum.woff) format("woff"), url(../../assets/fonts/iran-yekan/eot/iranyekanwebregularfanum.eot) format("eot")
+}
+
+@font-face {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Regular'), url('../fonts/Poppins/Poppins-Regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Poppins Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Thin'), url('../fonts/Poppins/Poppins-Thin.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Poppins Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Thin Italic'), url('../fonts/Poppins/Poppins-ThinItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Light'), url('../fonts/Poppins/Poppins-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Medium'), url('../fonts/Poppins/Poppins-Medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Poppins SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins SemiBold'), url('../fonts/Poppins/Poppins-SemiBold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Poppins Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Bold'), url('../fonts/Poppins/Poppins-Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Poppins Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Black'), url('../fonts/Poppins/Poppins-Black.woff') format('woff');
 }
 
 body {
     position: relative;
     overflow-x: hidden;
     background-color: #fff;
+    font-family: 'Poppins Regular';
 }
 
 body,
@@ -363,11 +426,20 @@ ul {
 .dv-custom-px {
     padding: 0 80px;
     width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+::selection{
+    background: var(--custom-green);
+    color: #fff;
 }
 
 .dv-custom-pl {
     padding: 0 0 0 80px;
     width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
 }
 
 #navbarSupportedContent .nav-item {
@@ -402,7 +474,8 @@ ul {
 
 .dv-banner-title h1 {
     margin-bottom: 1.7em;
-    line-height: 40px;
+    font-family: 'Poppins Medium' !important;
+    line-height: 96px;
 }
 
 .dv-top-green-btn, .dv-top-white-btn {
@@ -540,7 +613,7 @@ ul {
 
 .dv-dark-bg-h4 {
     padding-top: 2em;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .dv-dark-bg-p {
@@ -557,6 +630,8 @@ ul {
 
 .dv-different-part-p {
     padding-right: 50px;
+    font-family: 'Poppins Light';
+    line-height: 40px;
 }
 
 .img-cover {
@@ -588,6 +663,9 @@ ul {
 .dv-blog-card-body h6 {
     font-size: 22px;
     color: #000;
+    font-family: "Poppins SemiBold";
+    line-height: 30px;
+    text-align: left;
 }
 
 .dv-blog-card-body p {
@@ -800,6 +878,7 @@ ul {
     padding: 0.6em 1.2em;
     color: #161616;
     width: 25%;
+    border: none;
 }
 
 .dv-footer-list-title {
@@ -853,6 +932,35 @@ ul {
     color: #fff;
     font-size: 18px;
     line-height: 40px;
+}
+
+
+/***************    Font Family   ***************************/
+h2.dv-f-medium{
+    font-family: 'Poppins Medium';
+    line-height: 70px;
+}
+.dv-index-section-title{
+    font-family: "Poppins Medium";
+    line-height: 33px;
+    color: #757575;
+}
+h2.dv-f-semiBold{
+    font-family: "Poppins SemiBold";
+    line-height: 53px;
+}
+.dv-dark-bg-h4 , .dv-dark-bg-p , .dv-sign-up-text , .dv-footer-h2-title,
+.dv-footer-list-title
+{
+    font-family: "Poppins Medium";
+}
+.dv-blog-card-body p , .dv-footer-input::placeholder , .dv-service-item-title,
+.dv-copyright-text
+{
+    font-family: "Poppins Light";
+}
+.dv-blog-read-more , .dv-member-info h6{
+    font-family: "Poppins SemiBold";
 }
 
 /***************    RESPONSIVE   ***************************/
