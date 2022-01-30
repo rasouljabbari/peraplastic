@@ -995,7 +995,7 @@ ul {
 }
 
 .dv-blog-post-content-pt {
-    padding-top: 3em;
+    padding-top: 5em;
 }
 
 .dv-blog-post-title {
@@ -1034,7 +1034,7 @@ ul {
     color: #fff;
     font-size: 18px;
     line-height: 24px;
-    padding: 0.85em 1.25em;
+    padding: 1em 2em;
     border-radius: 12px;
     transition: all 0.3s linear;
 }
@@ -1114,43 +1114,45 @@ ul {
     filter: brightness(1);
 }
 
-.dv-blog-tags-title{
+.dv-blog-tags-title {
     line-height: 22px;
 }
 
-.dv-blog-tags-divider{
+.dv-blog-tags-divider {
     color: var(--custom-green);
     height: 2px !important;
     width: 84px;
     opacity: 1;
 }
 
-.dv-tag-values{
+.dv-tag-values {
     background: #DBDBDB;
     padding: 1em 0.85em;
     margin: 0 10px 20px 0;
     transition: all 0.3s linear;
 }
-.dv-tag-values a{
+
+.dv-tag-values a {
     color: var(--dark-content);
     transition: all 0.3s linear;
 }
 
-.dv-tag-values:hover{
+.dv-tag-values:hover {
     background: var(--custom-green);
 }
-.dv-tag-values:hover a{
+
+.dv-tag-values:hover a {
     color: #fff;
     transition: all 0.3s linear;
 }
 
-.dv-search-form{
+.dv-search-form {
     background: #F6F6F6;
     border-radius: 12px;
-    padding: 0.75em;
+    padding: 1em 0.75em;
 }
 
-.dv-blog-search-input{
+.dv-blog-search-input {
     border: none;
     outline: none;
     box-shadow: none;
@@ -1158,15 +1160,15 @@ ul {
     color: var(--dark-content);
     font-size: 20px;
     background: transparent;
-    width: calc( 100% - 50px );
+    width: calc(100% - 50px);
 }
 
-input::placeholder{
+input::placeholder {
     font-size: 20px;
     color: #979797;
 }
 
-.dv-blog-search-icon{
+.dv-blog-search-icon {
     background: transparent;
     border: none;
     outline: none;
@@ -1174,7 +1176,8 @@ input::placeholder{
     margin-right: 0.85em;
     width: 50px;
 }
-.dv-blog-search-icon span:before{
+
+.dv-blog-search-icon span:before {
     color: var(--custom-green);
     font-size: 1.85em;
 }
@@ -1197,8 +1200,7 @@ h2.dv-f-semiBold {
 
 /*Poppins Medium*/
 .dv-dark-bg-h4, .dv-dark-bg-p, .dv-sign-up-text, .dv-footer-h2-title,
-.dv-footer-list-title , .dv-blog-tags-title
-{
+.dv-footer-list-title, .dv-blog-tags-title {
     font-family: "Poppins Medium";
 }
 
@@ -1258,6 +1260,10 @@ h2.dv-f-semiBold {
     .dv-blog-posts .dv-blog-posts-item:nth-child(even) .dv-blog-post-content-pt {
         direction: ltr;
         padding-left: 3em !important;
+    }
+
+    .dv-blog-info-text-width{
+        width: 75%;
     }
 }
 
@@ -1369,24 +1375,29 @@ h2.dv-f-semiBold {
         padding: 0 1.25em;
     }
 
-    .dv-social-media{
+    .dv-social-media {
         width: 45px;
         height: 45px;
     }
-    .dv-social-media:before{
+
+    .dv-social-media:before {
         font-size: 1.2em;
     }
 
-    .breadcrumb .breadcrumb-item{
+    .breadcrumb .breadcrumb-item {
         font-size: 20px;
     }
 
-    .dv-tag-values{
+    .dv-tag-values {
         padding: 0.8em 0.6em;
     }
 
-    .dv-blog-post-info-p{
+    .dv-blog-post-info-p {
         text-align: justify;
+    }
+
+    .dv-blog-post-button{
+        padding: 0.85em 1.25em;
     }
 
 }
