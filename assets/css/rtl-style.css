@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'IranYekn';
+    font-style: normal;
+    font-weight: normal;
+    src: local('IranYekn'), url('../fonts/iran-yekan/woff/iranyekanwebregularfanum.woff') format('woff'),
+    local('IranYekn'), url('../fonts/iran-yekan/ttf/iranyekanwebregularfanum.ttf') format('ttf'),
+    local('IranYekn'), url('../fonts/iran-yekan/eot/iranyekanwebregularfanum.eot') format('eot');
+}
+
+*{
+    font-family: 'IranYekn' !important;
+}
+
+.dv-rtl{
+    direction: rtl !important;
+}
+
+.dv-rtl .me-4{
+    margin-right: 0 !important;
+    margin-left: 1.5em !important;
+}
+
+.dv-rtl .dv-tag-values{
+    margin: 0 0 20px 10px;
+}
+
+.dv-rtl .dv-social-media{
+    margin-right: 0;
+    margin-left: 0.5em;
+}
+
+.dv-rtl .dv-blog-post-icon , .dv-rtl .dv-location-item-icon,
+.dv-rtl .dv-social-item-icon
+{
+    padding-right: 0 !important;
+    padding-left: 0.5em;
+}
+.dv-rtl .dv-service-item-icon{
+    transform: rotate(180deg);
+}
+
+.dv-rtl .dv-service-item-day{
+    padding-right: 0;
+    padding-left: 2em;
+}
+
+.dv-rtl .breadcrumb-item+.breadcrumb-item::before{
+    float: right;
+    padding-right: 0.7em;
+    padding-left: 0.7em;
+}
+
+#navbarSupportedContent .me-auto{
+    margin-right: 0 !important;
+    margin-left: auto;
+}
+
+.dv-rtl .dv-mini-border{
+    margin-right: 0;
+    margin-left: 0.25em;
+}

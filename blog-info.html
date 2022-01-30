@@ -1,10 +1,513 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pera Plastic | Blog</title>
+    <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/icomoon.min.css">
+    <link rel="stylesheet" href="assets/css/icomoon_custom.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+<!--    <link rel="stylesheet" href="assets/css/rtl-style.css">-->
 </head>
+<!--<body class="dv-rtl">-->
 <body>
 
+<div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+</div>
+
+<div id="wrapper">
+    <div class="overlay"></div>
+
+    <!--    Start Header-->
+    <!--    Menu when device size > 768.01 px-->
+    <nav class="navbar z-index-1 d-none d-lg-flex navbar-expand-md navbar-light bg-light dv-custom-navbar">
+        <div class="dv-custom-px d-flex">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" class="img-fluid me-3" alt="pera plastic">
+                <span>Pera Plastic</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="announcements.html">Announcements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <div class="dropdown dv-language-select">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        language
+                    </a>
+                    <ul class="dropdown-menu px-0" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/flag-iran.png" class="img-fluid me-3" width="30" alt="Persian">
+                                <span>FA</span>
+                            </div>
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/flag-united-kingdom.png" class="img-fluid me-3" width="30"
+                                     alt="United Kingdom">
+                                <span>EN</span>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Sidebar when device size < 768px -->
+    <nav class="navbar z-index-1 d-lg-none navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" class="img-fluid" alt="pera plastic">
+                    </a>
+                </div>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="announcements.html">Announcements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="blog.html">Blog</a>
+            </li>
+        </ul>
+    </nav>
+    <!--    End Header-->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="d-flex w-100 dv-menu-in-mobile d-lg-none">
+            <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <div class="sidebar-brand ms-auto">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" class="img-fluid" alt="pera plastic">
+                </a>
+            </div>
+        </div>
+
+        <div class="dv-header-another-page-top-banner">
+            <div class="dv-custom-px">
+                <div class="row">
+                    <div class="col-12 dv-banner-title z-index-2">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <h1 class="dv-page-title mb-0">What is Hot Rolled Steel?</h1>
+                            <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">What is Hot Rolled Steel?
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        Section Name : Blog Info-->
+        <div class="dv-custom-mt-another-page">
+            <div class="dv-light-space-between-sections"></div>
+            <div class="dv-custom-px">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                        <h2 class="dv-blog-post-title mb-3">What is Hot Rolled Steel?</h2>
+                        <p class="dv-blog-post-info-p mb-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut leo eu enim auctor tristique. Aliquam
+                            vehicula faucibus velit vulputate. Etiam ut lectus varius, imperdiet magna non, feugiat sapien. Nunc
+                            scelerisque, urna tincidunt varius convallis, massa felis varius lacus, ac tincidunt ipsum odio vulputate
+                            turpis. Curabitur pretium nunc diam, a sodales massa posuere quis. Integer varius lacinia aliquam.
+                            Nunc porttitor erat eu posuere suscipit. Integer sodales ac enim et convallis. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Cras a velit tellus. Nam accumsan turpis sit amet convallis
+                            pellentesque. Nunc pellentesque mauris ac porttitor maximus. Proin sagittis et purus sed euismod.
+                            Pellentesque non mattis eros. Vestibulum et quam luctus elit convallis ultrices et non elit. Morbi vel
+                            sem eu justo sagittis tristique at a erat. Ut hendrerit egestas auctor. Donec non cursus neque. Curabitur
+                            placerat ornare massa eu euismod. Donec cursus est nec mi rutrum tempor. Proin faucibus, ligula vitae
+                            dapibus bibendum, dui sem convallis elit, in luctus mi lacus non urna. Donec blandit maximus diam non
+                            ullamcorper. Vestibulum blandit nisl tellus, vitae rutrum ex dignissim dictum. Vestibulum erat mi, pretium
+                            quis blandit quis, lobortis vitae ligula.
+
+
+                        </p>
+                        <img src="assets/images/blog-image.png"
+                             class="img-cover dv-blog-post-height mb-4"
+                             alt="blog post">
+
+                        <p class="dv-blog-post-info-p mb-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut leo eu enim
+                            auctor tristique. Aliquam vehicula faucibus velit vulputate. Etiam ut lectus
+                            imperdiet magna non, feugiat sapien. Nunc scelerisque, urna tincidunt varius
+                            convallis, massa felis varius lacus, ac…
+                        </p>
+
+                        <p class="dv-blog-post-info-p mb-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut leo eu enim auctor tristique. Aliquam
+                            vehicula faucibus velit vulputate. Etiam ut lectus varius, imperdiet magna non, feugiat sapien. Nunc
+                            scelerisque, urna tincidunt varius convallis, massa felis varius lacus, ac tincidunt ipsum odio vulputate
+                            turpis. Curabitur pretium nunc diam, a sodales massa posuere quis. Integer varius lacinia aliquam.
+                            Nunc porttitor erat eu posuere suscipit. Integer sodales ac enim et convallis. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Cras a velit tellus. Nam accumsan turpis sit amet convallis
+                            pellentesque. Nunc pellentesque mauris ac porttitor maximus. Proin sagittis et purus sed euismod.
+                            Pellentesque non mattis eros. Vestibulum et quam luctus elit convallis ultrices et non elit. Morbi vel
+                            sem eu justo sagittis tristique at a erat. Ut hendrerit egestas auctor. Donec non cursus neque. Curabitur
+                            placerat ornare massa eu euismod. Donec cursus est nec mi rutrum tempor. Proin faucibus, ligula vitae
+                            dapibus bibendum, dui sem convallis elit, in luctus mi lacus non urna. Donec blandit maximus diam non
+                            ullamcorper. Vestibulum blandit nisl tellus, vitae rutrum ex dignissim dictum. Vestibulum erat mi, pretium
+                            quis blandit quis, lobortis vitae ligula.
+                        </p>
+
+                        <div class="d-flex align-items-center dv-blog-post-details mb-3">
+                            <div class="d-flex align-items-center me-4">
+                                <span class="icon-Iconly-Light-Time-Circle pe-2 dv-blog-post-icon"></span>
+                                <span class="dv-blog-post-icon-title">June 6, 2016</span>
+                            </div>
+
+                            <div class="d-flex align-items-center me-4">
+                                <span class="pe-2 icon-Iconly-Light-Document dv-blog-post-icon"></span>
+                                <span class="dv-blog-post-icon-title">Blog</span>
+                            </div>
+
+                            <div class="d-flex align-items-center me-4">
+                                <span class="pe-2 icon-Iconly-Light-Chat dv-blog-post-icon"></span>
+                                <span class="dv-blog-post-icon-title">5</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center me-2">
+                            <span class="dv-mini-border me-1"></span>
+                            <span class="dv-large-border"></span>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <h3 class="mb-3 mt-5">Share This : </h3>
+                            <div class="d-flex align-items-center">
+                                <a href="#"><span class="icon-instagram_icon dv-social-media"></span></a>
+                                <a href="#"><span class="icon-linkedin_network_social-network_linkedin-logo_icon1 dv-social-media"></span></a>
+                                <a href="#"><span class="icon-x33_35-telegram dv-social-media"></span></a>
+                                <a href="#"><span class="icon-twitter_bird_icon dv-social-media"></span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <form class="dv-search-form mb-4 d-flex w-100">
+                            <button type="submit" class="dv-blog-search-icon">
+                                <span class="icon-search4"></span>
+                            </button>
+                            <input type="search" class="dv-blog-search-input" placeholder="Search">
+                        </form>
+                        
+                        <h5>Recent News</h5>
+                        
+                        <div class="row g-3 mb-5">
+                            <div class="col-4">
+                                <a href="#">
+                                    <div class="dv-blog-info-mini-image">
+                                        <img src="assets/images/blog-mini-image.png" class="img-cover" alt="blog info image">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">
+                                    <div class="dv-blog-info-mini-image">
+                                        <img src="assets/images/blog-image.png" class="img-cover" alt="blog info image">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">
+                                    <div class="dv-blog-info-mini-image">
+                                        <img src="assets/images/blog-mini-image.png" class="img-cover" alt="blog info image">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">
+                                    <div class="dv-blog-info-mini-image">
+                                        <img src="assets/images/blog-image2.png" class="img-cover" alt="blog info image">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">
+                                    <div class="dv-blog-info-mini-image">
+                                        <img src="assets/images/blog-mini-image.png" class="img-cover" alt="blog info image">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">
+                                    <div class="dv-blog-info-mini-image">
+                                        <img src="assets/images/blog-image4.png" class="img-cover" alt="blog info image">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">
+                                    <div class="dv-blog-info-mini-image">
+                                        <img src="assets/images/blog-mini-image.png" class="img-cover" alt="blog info image">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">
+                                    <div class="dv-blog-info-mini-image">
+                                        <img src="assets/images/blog-post.png" class="img-cover" alt="blog info image">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">
+                                    <div class="dv-blog-info-mini-image">
+                                        <img src="assets/images/blog-mini-image.png" class="img-cover" alt="blog info image">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h6 class="dv-blog-tags-title">Tags</h6>
+                        <hr class="dv-blog-tags-divider"/>
+
+                        <div class="d-flex flex-wrap">
+                            <div class="dv-tag-values">
+                                <a href="#">
+                                    Business
+                                </a>
+                            </div>
+                            <div class="dv-tag-values">
+                                <a href="#">
+                                    Government
+                                </a>
+                            </div>
+                            <div class="dv-tag-values">
+                                <a href="#">
+                                    Investment
+                                </a>
+                            </div>
+                            <div class="dv-tag-values">
+                                <a href="#">
+                                    Business
+                                </a>
+                            </div>
+                            <div class="dv-tag-values">
+                                <a href="#">
+                                    Government
+                                </a>
+                            </div>
+                            <div class="dv-tag-values">
+                                <a href="#">
+                                    Investment
+                                </a>
+                            </div>
+                            <div class="dv-tag-values">
+                                <a href="#">
+                                    Business
+                                </a>
+                            </div>
+                            <div class="dv-tag-values">
+                                <a href="#">
+                                    Government
+                                </a>
+                            </div>
+                            <div class="dv-tag-values">
+                                <a href="#">
+                                    Investment
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="dv-light-space-between-sections"></div>
+        </div>
+
+
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="dv-footer-top">
+        <div class="dv-custom-px">
+            <div class="row g-3">
+                <div class="col-12 col-lg-4">
+                    <div class="dv-footer-logo mx-auto mx-lg-0">
+                        <img src="assets/images/logo.png" class="img-fluid" alt="pera plastic">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="row g-0">
+                        <div class="col-12 col-lg-6 p-0">
+                            <div class="d-flex flex-column align-items-center">
+                                <span class="dv-sign-up-text mb-4">SIGN UP OUR</span>
+                                <h2 class="dv-footer-h2-title">Newsletter</h2>
+
+                                <form class="dv-footer-form justify-content-center input-group">
+                                    <input type="email" name="email" class="dv-footer-input" placeholder="your Email">
+                                    <button type="submit" class="dv-footer-button">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 class="dv-footer-list-title">SERVICES</h3>
+                    <ul class="dv-footer-list">
+                        <li class="dv-service-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-arrow-right13 dv-service-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Steel works</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dv-service-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-arrow-right13 dv-service-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Plastic</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dv-service-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-arrow-right13 dv-service-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Polymer Compaunds</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 class="dv-footer-list-title">GET IN TOUCH</h3>
+                    <ul class="dv-footer-list">
+                        <li class="dv-location-item">
+                            <div class="d-flex align-items-start">
+                                <span class="icon-pin-48 dv-location-item-icon pe-2"></span>
+                                <span class="dv-service-item-title w-100 w-lg-75">3531 Medical Center Drive Fort Myers, FL 33901</span>
+                            </div>
+                        </li>
+                        <li class="dv-location-item">
+                            <div class="d-flex align-items-center">
+                                <span class="icon-phone2 dv-location-item-icon pe-2"></span>
+                                <span class="dv-service-item-title">1-800-123-4567</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 class="dv-footer-list-title">Social Media</h3>
+                    <ul class="dv-footer-list">
+                        <li class="dv-social-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-instagram_icon dv-social-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Instagram</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dv-social-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-x33_35-telegram dv-social-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Telegram</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dv-social-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-linkedin_network_social-network_linkedin-logo_icon dv-social-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Linkedin</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 class="dv-footer-list-title">WORKING HOURS</h3>
+                    <ul class="dv-footer-list">
+                        <li class="dv-social-item">
+                            <div class="d-flex align-items-center">
+                                <span class="dv-service-item-day">Weekdays</span>
+                                <span class="dv-service-item-time"> 8:00 - 20:00</span>
+                            </div>
+                        </li>
+                        <li class="dv-social-item">
+                            <div class="d-flex align-items-center">
+                                <span class="dv-service-item-day">Saturdays</span>
+                                <span class="dv-service-item-time"> 8:00 - 20:00</span>
+                            </div>
+                        </li>
+                        <li class="dv-social-item">
+                            <div class="d-flex align-items-center">
+                                <span class="dv-service-item-day">Holidays</span>
+                                <span class="dv-service-item-time"> Closed </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dv-footer-copyright w-100">
+        <div class="dv-custom-px">
+            <p class="dv-copyright-text mb-0">
+                © COPYRIGHT 2022. ALL RIGHTS RESERVED
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/index.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
