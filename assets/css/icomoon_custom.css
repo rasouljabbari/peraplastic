@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon_custom/icomoon.eot?qt9nt1');
-  src:  url('../fonts/icomoon_custom/icomoon.eot?qt9nt1#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon_custom/icomoon.ttf?qt9nt1') format('truetype'),
-    url('../fonts/icomoon_custom/icomoon.woff?qt9nt1') format('woff'),
-    url('../fonts/icomoon_custom/icomoon.svg?qt9nt1#icomoon') format('svg');
+  src:  url('../fonts/icomoon_custom/icomoon.eot?ejozye');
+  src:  url('../fonts/icomoon_custom/icomoon.eot?ejozye#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon_custom/icomoon.ttf?ejozye') format('truetype'),
+    url('../fonts/icomoon_custom/icomoon.woff?ejozye') format('woff'),
+    url('../fonts/icomoon_custom/icomoon.svg?ejozye#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Iconly-Light-Chat:before {
+  content: "\e904";
+  color: #409b35;
+}
+.icon-Iconly-Light-Document:before {
+  content: "\e905";
+  color: #409b35;
+}
+.icon-Iconly-Light-Time-Circle:before {
+  content: "\e906";
+  color: #409b35;
+}
+.icon-close-solid:before {
+  content: "\e916";
+}
 .icon-x33_35-telegram:before {
   content: "\e900";
 }

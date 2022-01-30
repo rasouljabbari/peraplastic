@@ -1,10 +1,513 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pera Plastic</title>
+    <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/icomoon.min.css">
+    <link rel="stylesheet" href="assets/css/icomoon_custom.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+<div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+</div>
+
+<div id="wrapper">
+    <div class="overlay"></div>
+
+    <!--    Start Header-->
+    <!--    Menu when device size > 768.01 px-->
+    <nav class="navbar z-index-1 d-none d-lg-flex navbar-expand-md navbar-light bg-light dv-custom-navbar">
+        <div class="dv-custom-px d-flex">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" class="img-fluid me-3" alt="pera plastic">
+                <span>Pera Plastic</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="announcements.html">Announcements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <div class="dropdown dv-language-select">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        language
+                    </a>
+                    <ul class="dropdown-menu px-0" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/flag-iran.png" class="img-fluid me-3" width="30" alt="Persian">
+                                <span>FA</span>
+                            </div>
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/flag-united-kingdom.png" class="img-fluid me-3" width="30"
+                                     alt="United Kingdom">
+                                <span>EN</span>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Sidebar when device size < 768px -->
+    <nav class="navbar z-index-1 d-lg-none navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" class="img-fluid" alt="pera plastic">
+                    </a>
+                </div>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="announcements.html">Announcements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="blog.html">Blog</a>
+            </li>
+        </ul>
+    </nav>
+    <!--    End Header-->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="d-flex w-100 dv-menu-in-mobile d-lg-none">
+            <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <div class="sidebar-brand ms-auto">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" class="img-fluid" alt="pera plastic">
+                </a>
+            </div>
+        </div>
+
+        <div class="dv-header-another-page-top-banner">
+            <div class="dv-custom-px">
+                <div class="row">
+                    <div class="col-12 dv-banner-title z-index-2">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <h1 class="dv-page-title mb-0">Blog</h1>
+                            <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        Section Name : Blog-->
+        <div class="dv-custom-mt-another-page">
+            <div class="dv-custom-px">
+                <div class="row px-0 gy-0 gx-5 dv-blog-posts">
+
+                    <div class="col-12 px-2 px-lg-0 dv-blog-posts-item">
+                        <div class="row px-2 px-lg-0">
+                            <div
+                                    data-aos="zoom-in-up"
+                                    data-aos-offset="450"
+                                    data-aos-easing="ease-in-sine"
+                                    class="col-12 col-lg-6 px-2 px-lg-0 dv-blog-post-content-pt">
+                                <h2 class="dv-blog-post-title mb-3">What is Hot Rolled Steel?</h2>
+                                <div class="d-flex align-items-center dv-blog-post-details mb-3">
+                                    <div class="d-flex align-items-center me-4">
+                                        <span class="icon-Iconly-Light-Time-Circle pe-2 dv-blog-post-icon"></span>
+                                        <span class="dv-blog-post-icon-title">June 6, 2016</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center me-4">
+                                        <span class="pe-2 icon-Iconly-Light-Document dv-blog-post-icon"></span>
+                                        <span class="dv-blog-post-icon-title">Blog</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center me-4">
+                                        <span class="pe-2 icon-Iconly-Light-Chat dv-blog-post-icon"></span>
+                                        <span class="dv-blog-post-icon-title">5</span>
+                                    </div>
+                                </div>
+                                <p class="dv-blog-post-p mb-5">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut leo eu enim
+                                    auctor tristique. Aliquam vehicula faucibus velit vulputate. Etiam ut lectus
+                                    imperdiet magna non, feugiat sapien. Nunc scelerisque, urna tincidunt varius
+                                    convallis, massa felis varius lacus, ac…
+                                </p>
+                                <div class="d-flex">
+                                    <a href="#" class="dv-blog-post-button">Read More</a>
+                                </div>
+                            </div>
+                            <div
+                                    data-aos="zoom-in-down"
+                                    data-aos-offset="450"
+                                    data-aos-easing="ease-in-sine"
+                                    class="col-12 col-lg-6 px-2 px-lg-0">
+                                <a href="blog-info.html">
+                                    <img src="assets/images/blog-image.png"
+                                         class="img-cover dv-blog-post-height"
+                                         alt="blog post">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 px-2 px-lg-0 dv-blog-posts-item">
+                        <div class="row px-2 px-lg-0">
+                            <div
+                                    data-aos="zoom-in-up"
+                                    data-aos-offset="450"
+                                    data-aos-easing="ease-in-sine"
+                                    class="col-12 col-lg-6 px-2 px-lg-0 dv-blog-post-content-pt">
+                                <h2 class="dv-blog-post-title mb-3">What is Hot Rolled Steel?</h2>
+                                <div class="d-flex align-items-center dv-blog-post-details mb-3">
+                                    <div class="d-flex align-items-center me-4">
+                                        <span class="icon-Iconly-Light-Time-Circle pe-2 dv-blog-post-icon"></span>
+                                        <span class="dv-blog-post-icon-title">June 6, 2016</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center me-4">
+                                        <span class="pe-2 icon-Iconly-Light-Document dv-blog-post-icon"></span>
+                                        <span class="dv-blog-post-icon-title">Blog</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center me-4">
+                                        <span class="pe-2 icon-Iconly-Light-Chat dv-blog-post-icon"></span>
+                                        <span class="dv-blog-post-icon-title">5</span>
+                                    </div>
+                                </div>
+                                <p class="dv-blog-post-p mb-5">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut leo eu enim
+                                    auctor tristique. Aliquam vehicula faucibus velit vulputate. Etiam ut lectus
+                                    imperdiet magna non, feugiat sapien. Nunc scelerisque, urna tincidunt varius
+                                    convallis, massa felis varius lacus, ac…
+                                </p>
+                                <div class="d-flex">
+                                    <a href="#" class="dv-blog-post-button">Read More</a>
+                                </div>
+                            </div>
+                            <div
+                                    data-aos="zoom-in-down"
+                                    data-aos-offset="450"
+                                    data-aos-easing="ease-in-sine"
+                                    class="col-12 col-lg-6 px-2 px-lg-0">
+                                <a href="blog-info.html">
+                                    <img src="assets/images/blog-image2.png" class="img-cover dv-blog-post-height"
+                                         alt="blog post">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 px-2 px-lg-0 dv-blog-posts-item">
+                        <div class="row px-2 px-lg-0">
+                            <div
+                                    data-aos="zoom-in-up"
+                                    data-aos-offset="450"
+                                    data-aos-easing="ease-in-sine"
+                                    class="col-12 col-lg-6 px-2 px-lg-0 dv-blog-post-content-pt">
+                                <h2 class="dv-blog-post-title mb-3">What is Hot Rolled Steel?</h2>
+                                <div class="d-flex align-items-center dv-blog-post-details mb-3">
+                                    <div class="d-flex align-items-center me-4">
+                                        <span class="icon-Iconly-Light-Time-Circle pe-2 dv-blog-post-icon"></span>
+                                        <span class="dv-blog-post-icon-title">June 6, 2016</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center me-4">
+                                        <span class="pe-2 icon-Iconly-Light-Document dv-blog-post-icon"></span>
+                                        <span class="dv-blog-post-icon-title">Blog</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center me-4">
+                                        <span class="pe-2 icon-Iconly-Light-Chat dv-blog-post-icon"></span>
+                                        <span class="dv-blog-post-icon-title">5</span>
+                                    </div>
+                                </div>
+                                <p class="dv-blog-post-p mb-5">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut leo eu enim
+                                    auctor tristique. Aliquam vehicula faucibus velit vulputate. Etiam ut lectus
+                                    imperdiet magna non, feugiat sapien. Nunc scelerisque, urna tincidunt varius
+                                    convallis, massa felis varius lacus, ac…
+                                </p>
+                                <div class="d-flex">
+                                    <a href="#" class="dv-blog-post-button">Read More</a>
+                                </div>
+                            </div>
+                            <div
+                                    data-aos="zoom-in-down"
+                                    data-aos-offset="450"
+                                    data-aos-easing="ease-in-sine"
+                                    class="col-12 col-lg-6 px-2 px-lg-0">
+                                <a href="blog-info.html">
+                                    <img src="assets/images/blog-image3.png" class="img-cover dv-blog-post-height"
+                                         alt="blog post">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 px-2 px-lg-0 dv-blog-posts-item">
+                        <div class="row px-2 px-lg-0">
+                            <div
+                                    data-aos="zoom-in-up"
+                                    data-aos-offset="450"
+                                    data-aos-easing="ease-in-sine"
+                                    class="col-12 col-lg-6 px-2 px-lg-0 dv-blog-post-content-pt">
+                                <h2 class="dv-blog-post-title mb-3">What is Hot Rolled Steel?</h2>
+                                <div class="d-flex align-items-center dv-blog-post-details mb-3">
+                                    <div class="d-flex align-items-center me-4">
+                                        <span class="icon-Iconly-Light-Time-Circle pe-2 dv-blog-post-icon"></span>
+                                        <span class="dv-blog-post-icon-title">June 6, 2016</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center me-4">
+                                        <span class="pe-2 icon-Iconly-Light-Document dv-blog-post-icon"></span>
+                                        <span class="dv-blog-post-icon-title">Blog</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center me-4">
+                                        <span class="pe-2 icon-Iconly-Light-Chat dv-blog-post-icon"></span>
+                                        <span class="dv-blog-post-icon-title">5</span>
+                                    </div>
+                                </div>
+                                <p class="dv-blog-post-p mb-5">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut leo eu enim
+                                    auctor tristique. Aliquam vehicula faucibus velit vulputate. Etiam ut lectus
+                                    imperdiet magna non, feugiat sapien. Nunc scelerisque, urna tincidunt varius
+                                    convallis, massa felis varius lacus, ac…
+                                </p>
+                                <div class="d-flex">
+                                    <a href="#" class="dv-blog-post-button">Read More</a>
+                                </div>
+                            </div>
+                            <div
+                                    data-aos="zoom-in-down"
+                                    data-aos-offset="450"
+                                    data-aos-easing="ease-in-sine"
+                                    class="col-12 col-lg-6 px-2 px-lg-0">
+                                <a href="blog-info.html">
+                                    <img src="assets/images/blog-image4.png" class="img-cover dv-blog-post-height"
+                                         alt="blog post">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination dv-blog-pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="dv-light-space-between-sections"></div>
+        </div>
+
+
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="dv-footer-top">
+        <div class="dv-custom-px">
+            <div class="row g-3">
+                <div class="col-12 col-lg-4">
+                    <div class="dv-footer-logo mx-auto mx-lg-0">
+                        <img src="assets/images/logo.png" class="img-fluid" alt="pera plastic">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="row g-0">
+                        <div class="col-12 col-lg-6 p-0">
+                            <div class="d-flex flex-column align-items-center">
+                                <span class="dv-sign-up-text mb-4">SIGN UP OUR</span>
+                                <h2 class="dv-footer-h2-title">Newsletter</h2>
+
+                                <form class="dv-footer-form justify-content-center input-group">
+                                    <input type="email" name="email" class="dv-footer-input" placeholder="your Email">
+                                    <button type="submit" class="dv-footer-button">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 class="dv-footer-list-title">SERVICES</h3>
+                    <ul class="dv-footer-list">
+                        <li class="dv-service-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-arrow-right13 dv-service-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Steel works</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dv-service-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-arrow-right13 dv-service-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Plastic</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dv-service-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-arrow-right13 dv-service-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Polymer Compaunds</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 class="dv-footer-list-title">GET IN TOUCH</h3>
+                    <ul class="dv-footer-list">
+                        <li class="dv-location-item">
+                            <div class="d-flex align-items-start">
+                                <span class="icon-pin-48 dv-location-item-icon pe-2"></span>
+                                <span class="dv-service-item-title w-100 w-lg-75">3531 Medical Center Drive Fort Myers, FL 33901</span>
+                            </div>
+                        </li>
+                        <li class="dv-location-item">
+                            <div class="d-flex align-items-center">
+                                <span class="icon-phone2 dv-location-item-icon pe-2"></span>
+                                <span class="dv-service-item-title">1-800-123-4567</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 class="dv-footer-list-title">Social Media</h3>
+                    <ul class="dv-footer-list">
+                        <li class="dv-social-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-instagram_icon dv-social-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Instagram</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dv-social-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-x33_35-telegram dv-social-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Telegram</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dv-social-item">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-linkedin_network_social-network_linkedin-logo_icon dv-social-item-icon pe-2"></span>
+                                    <span class="dv-service-item-title">Linkedin</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 class="dv-footer-list-title">WORKING HOURS</h3>
+                    <ul class="dv-footer-list">
+                        <li class="dv-social-item">
+                            <div class="d-flex align-items-center">
+                                <span class="dv-service-item-day">Weekdays</span>
+                                <span class="dv-service-item-time"> 8:00 - 20:00</span>
+                            </div>
+                        </li>
+                        <li class="dv-social-item">
+                            <div class="d-flex align-items-center">
+                                <span class="dv-service-item-day">Saturdays</span>
+                                <span class="dv-service-item-time"> 8:00 - 20:00</span>
+                            </div>
+                        </li>
+                        <li class="dv-social-item">
+                            <div class="d-flex align-items-center">
+                                <span class="dv-service-item-day">Holidays</span>
+                                <span class="dv-service-item-time"> Closed </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dv-footer-copyright w-100">
+        <div class="dv-custom-px">
+            <p class="dv-copyright-text mb-0">
+                © COPYRIGHT 2022. ALL RIGHTS RESERVED
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/index.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
