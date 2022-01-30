@@ -139,3 +139,24 @@ let indexMemberSwiper = new Swiper(".indexMemberSwiper", {
         },
     },
 });
+
+let productsTopSlider = new Swiper(".productsTopSlider", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+let miniProductSlider = new Swiper(".miniProductSlider", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    direction: "vertical",
+    // freeMode: true,
+    // watchSlidesProgress: true,
+});
+let largeProductSlider = new Swiper(".largeProductSlider", {
+    spaceBetween: 10,
+    thumbs: {
+        swiper: miniProductSlider,
+    },
+});
