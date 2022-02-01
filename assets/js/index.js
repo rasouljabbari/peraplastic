@@ -30,7 +30,7 @@ $(document).ready(function () {
 let indexProductsSwiper = new Swiper(".indexProductsSwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
-    autoplay : true,
+    autoplay: true,
     breakpoints: {
         0: {
             slidesPerView: 1,
@@ -61,7 +61,7 @@ let indexProductsSwiper = new Swiper(".indexProductsSwiper", {
 let indexCertificateSwiper = new Swiper(".indexCertificateSwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
-    autoplay : true,
+    autoplay: true,
     breakpoints: {
         0: {
             slidesPerView: 1,
@@ -84,7 +84,7 @@ let indexCertificateSwiper = new Swiper(".indexCertificateSwiper", {
 let indexBlogSwiper = new Swiper(".indexBlogSwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
-    autoplay : true,
+    autoplay: true,
     breakpoints: {
         0: {
             slidesPerView: 1,
@@ -115,7 +115,7 @@ let indexBlogSwiper = new Swiper(".indexBlogSwiper", {
 let indexMemberSwiper = new Swiper(".indexMemberSwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
-    autoplay : true,
+    autoplay: true,
     breakpoints: {
         0: {
             slidesPerView: 1,
@@ -139,24 +139,114 @@ let indexMemberSwiper = new Swiper(".indexMemberSwiper", {
         },
     },
 });
-
 let productsTopSlider = new Swiper(".productsTopSlider", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-});
-
-let miniProductSlider = new Swiper(".miniProductSlider", {
-    spaceBetween: 10,
-    slidesPerView: 3,
-    direction: "vertical",
-    // freeMode: true,
-    // watchSlidesProgress: true,
-});
-let largeProductSlider = new Swiper(".largeProductSlider", {
-    spaceBetween: 10,
-    thumbs: {
-        swiper: miniProductSlider,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
 });
+
+if($('body').hasClass('dv-rtl')){
+    $('.dv-slick-slider-parent').attr('dir' , 'rtl')
+    $('.SimilarProductSlider').slick({
+        rtl: true,
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+}else{
+    $('.SimilarProductSlider').slick({
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+}
+
+$(document).ready(() => {
+    $('#chartMonth').removeClass('dv-show')
+    $('#chartMonth').addClass('dv-fade')
+    $('#chartYear').removeClass('dv-show')
+    $('#chartYear').addClass('dv-fade')
+    $('#chartDailyBtn').addClass('active')
+})
+
+function showChart(value) {
+
+    if (value === 'chartMonth') {
+        $('#chartDaily').addClass('dv-fade')
+        $('#chartDailyBtn').removeClass('active')
+        $('#chartYear').addClass('dv-fade')
+        $('#chartYearBtn').removeClass('active')
+
+        $(`#${value}`).removeClass('dv-fade')
+        $(`#${value}Btn`).addClass('active')
+    } else if (value === 'chartYear') {
+        $('#chartDaily').addClass('dv-fade')
+        $('#chartDailyBtn').removeClass('active')
+        $('#chartMonth').addClass('dv-fade')
+        $('#chartMonthBtn').removeClass('active')
+
+        $(`#${value}`).removeClass('dv-fade')
+        $(`#${value}Btn`).addClass('active')
+    } else {
+        $('#chartMonth').addClass('dv-fade')
+        $('#chartMonthBtn').removeClass('active')
+        $('#chartYear').addClass('dv-fade')
+        $('#chartYearBtn').removeClass('active')
+
+        $(`#${value}`).removeClass('dv-fade')
+        $(`#${value}Btn`).addClass('active')
+    }
+}

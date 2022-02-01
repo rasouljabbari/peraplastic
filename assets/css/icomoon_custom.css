@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon_custom/icomoon.eot?m0e6n8');
-  src:  url('../fonts/icomoon_custom/icomoon.eot?m0e6n8#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon_custom/icomoon.ttf?m0e6n8') format('truetype'),
-    url('../fonts/icomoon_custom/icomoon.woff?m0e6n8') format('woff'),
-    url('../fonts/icomoon_custom/icomoon.svg?m0e6n8#icomoon') format('svg');
+  src:  url('../fonts/icomoon_custom/icomoon.eot?d54wgu');
+  src:  url('../fonts/icomoon_custom/icomoon.eot?d54wgu#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon_custom/icomoon.ttf?d54wgu') format('truetype'),
+    url('../fonts/icomoon_custom/icomoon.woff?d54wgu') format('woff'),
+    url('../fonts/icomoon_custom/icomoon.svg?d54wgu#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-dv-left-arrow:before {
+  content: "\e90b";
+  color: #409b35;
+}
+.icon-dv-right-arrow:before {
+  content: "\e90c";
+  color: #409b35;
+}
 .icon-dobble-left-arrow:before {
   content: "\e909";
 }
