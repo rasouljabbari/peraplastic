@@ -95,6 +95,17 @@
     right: -40px;
 }
 
+.dv-rtl .dv-gallery-overlay-link{
+    right: 0;
+    left: auto;
+    clip-path: polygon(100% 5%, 0% 100%, 100% 100%);
+    padding: 1.85em 1.7em 0 0;
+}
+
+.dv-rtl .dv-gallery-overlay-link span{
+    transform: rotate(180deg);
+}
+
 @media (min-width: 992px){
     .dv-rtl .dv-blog-posts .dv-blog-posts-item:nth-child(odd) {
         direction: rtl;

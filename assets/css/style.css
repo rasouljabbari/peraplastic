@@ -119,11 +119,11 @@ ul {
     top: 0
 }
 
-#overlay img{
+#overlay img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     width: 100px;
 }
 
@@ -1352,21 +1352,99 @@ input::placeholder {
     color: #409b35;
     font-weight: bold;
 }
-.SimilarProductSlider.slick-initialized .slick-slide{
+
+.SimilarProductSlider.slick-initialized .slick-slide {
     margin: 0 0.5em;
 }
 
-.SimilarProductSlider .slick-prev{
+.SimilarProductSlider .slick-prev {
     left: -40px;
 }
 
-.SimilarProductSlider .slick-prev, .SimilarProductSlider .slick-next{
+.SimilarProductSlider .slick-prev, .SimilarProductSlider .slick-next {
     background: unset !important;
     color: unset !important;
     opacity: 1;
 }
 
+.dv-gallery-nav-pills .nav-item .nav-link {
+    border: 1px solid #C9C9C9;
+    border-radius: 0;
+    background: transparent;
+    padding: 0.85em 1.4em;
+    margin: 0.4em;
+    color: #2E3853;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
 
+.dv-gallery-nav-pills .nav-item .nav-link.active {
+    background: var(--custom-green);
+    color: #fff;
+}
+
+.dv-gallery-overlay-on-image{
+    transition: all 0.3s linear;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46,56,83,0.64);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 3em;
+}
+
+.dv-gallery-image-parent:hover .dv-gallery-overlay-on-image{
+    opacity: 1;
+}
+
+.dv-gallery-overlay-title{
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 1.5em;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dv-gallery-overlay-text{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.dv-gallery-overlay-link{
+    background-color: #D15F2E;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 117px;
+    height: 91px;
+    clip-path: polygon(0 1%, 0% 100%, 100% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1.85em 0 0 1.7em;
+}
+
+.dv-gallery-overlay-link span{
+    z-index: 1;
+}
+
+.dv-gallery-overlay-link span:before{
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 400;
+}
 
 /***************    Font Family   ***************************/
 h2.dv-f-medium {
@@ -1387,7 +1465,8 @@ h2.dv-f-semiBold {
 
 /*Poppins Medium*/
 .dv-dark-bg-h4, .dv-dark-bg-p, .dv-sign-up-text, .dv-footer-h2-title,
-.dv-footer-list-title, .dv-blog-tags-title, .apexcharts-title-text {
+.dv-footer-list-title, .dv-blog-tags-title, .apexcharts-title-text, .dv-gallery-nav-pills .nav-item .nav-link,
+.dv-gallery-overlay-title {
     font-family: "Poppins Medium";
 }
 
@@ -1452,6 +1531,7 @@ h2.dv-f-semiBold {
         max-width: 1280px;
     }
 }
+
 @media (max-width: 1200px) {
     .dv-custom-px {
         max-width: 992px;
@@ -1569,6 +1649,11 @@ h2.dv-f-semiBold {
         height: 35px;
         font-size: 1em;
     }
+
+    .dv-custom-px {
+        padding: 0 1.8em;
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1605,12 +1690,6 @@ h2.dv-f-semiBold {
     .dv-dark-bg-p {
         font-size: 1em;
         line-height: 30px;
-    }
-
-
-    .dv-custom-px {
-        padding: 0 1.25em;
-        width: 100%;
     }
 
     .dv-custom-pl {
@@ -1683,11 +1762,11 @@ h2.dv-f-semiBold {
         height: 20px;
     }
 
-    .SimilarProductSlider .slick-prev{
+    .SimilarProductSlider .slick-prev {
         left: -22px;
     }
 
-    .SimilarProductSlider .slick-next{
+    .SimilarProductSlider .slick-next {
         right: -8px;
     }
 
@@ -1700,9 +1779,17 @@ h2.dv-f-semiBold {
         margin-top: 550px;
     }
 
+    .dv-custom-px {
+        padding: 0 1.25em;
+    }
 }
 
 @media (max-width: 576px) {
+
+    .dv-gallery-nav-pills .nav-item .nav-link{
+        padding: 0.5em;
+        font-size: 0.85em;
+    }
 
     p {
         font-size: 14px;
