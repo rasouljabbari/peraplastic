@@ -98,6 +98,48 @@ ul {
     background-color: transparent;
 }
 
+#overlay {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .9);
+    transition: 1s 0.4s
+}
+
+#progress {
+    transition: all 0.3s linear;
+    height: 100%;
+    width: 100% !important;
+    background: url(../images/loader.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0
+}
+
+#overlay img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 100px;
+}
+
+#progstat {
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 55%;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    color: var(--custom-green);
+    z-index: 9;
+    font-weight: bold;
+}
+
 /*-------------------------------*/
 /*           Wrappers            */
 /*-------------------------------*/
@@ -1648,6 +1690,16 @@ h2.dv-f-semiBold {
     .SimilarProductSlider .slick-next{
         right: -8px;
     }
+
+    .dv-header-top-banner {
+        height: 600px;
+        background: url(../images/top-banner-mini.png) center center no-repeat hsla(180, 0%, 50%, 0.85);
+    }
+
+    .dv-custom-mt-export {
+        margin-top: 550px;
+    }
+
 }
 
 @media (max-width: 576px) {
