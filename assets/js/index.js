@@ -25,6 +25,8 @@ $(document).ready(function () {
     $('[data-toggle="offcanvas"]').click(function () {
         $('#wrapper').toggleClass('toggled');
     });
+
+    $('.leaflet-marker-icon').attr('src' , 'assets/images/pin-location.png');
 });
 
 let indexProductsSwiper = new Swiper(".indexProductsSwiper", {

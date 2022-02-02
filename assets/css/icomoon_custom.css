@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon_custom/icomoon.eot?d54wgu');
-  src:  url('../fonts/icomoon_custom/icomoon.eot?d54wgu#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon_custom/icomoon.ttf?d54wgu') format('truetype'),
-    url('../fonts/icomoon_custom/icomoon.woff?d54wgu') format('woff'),
-    url('../fonts/icomoon_custom/icomoon.svg?d54wgu#icomoon') format('svg');
+  src:  url('../fonts/icomoon_custom/icomoon.eot?4ac23s');
+  src:  url('../fonts/icomoon_custom/icomoon.eot?4ac23s#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon_custom/icomoon.ttf?4ac23s') format('truetype'),
+    url('../fonts/icomoon_custom/icomoon.woff?4ac23s') format('woff'),
+    url('../fonts/icomoon_custom/icomoon.svg?4ac23s#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Bold-Calling:before {
+  content: "\e900";
+  color: #409c35;
+}
+.icon-Bold-Message:before {
+  content: "\e901";
+  color: #409c35;
+}
+.icon-pin-location .path1:before {
+  content: "\e902";
+  color: rgb(64, 156, 53);
+}
+.icon-pin-location .path2:before {
+  content: "\e903";
+  margin-left: -0.5634765625em;
+  color: rgb(94, 209, 80);
+}
+.icon-pin-location .path3:before {
+  content: "\e904";
+  margin-left: -0.5634765625em;
+  color: rgb(240, 240, 240);
+}
+.icon-pin-location .path4:before {
+  content: "\e905";
+  margin-left: -0.5634765625em;
+  color: rgb(255, 255, 255);
+}
 .icon-dv-left-arrow:before {
   content: "\e90b";
   color: #409b35;
@@ -46,29 +73,29 @@
   content: "\e908";
 }
 .icon-Iconly-Light-Chat:before {
-  content: "\e904";
+  content: "\e906";
   color: #409b35;
 }
 .icon-Iconly-Light-Document:before {
-  content: "\e905";
+  content: "\e90d";
   color: #409b35;
 }
 .icon-Iconly-Light-Time-Circle:before {
-  content: "\e906";
+  content: "\e90e";
   color: #409b35;
 }
 .icon-close-solid:before {
   content: "\e916";
 }
 .icon-x33_35-telegram:before {
-  content: "\e900";
+  content: "\e90f";
 }
 .icon-instagram_icon:before {
-  content: "\e901";
+  content: "\e910";
 }
 .icon-linkedin_network_social-network_linkedin-logo_icon:before {
-  content: "\e902";
+  content: "\e911";
 }
 .icon-pin-48:before {
-  content: "\e903";
+  content: "\e912";
 }

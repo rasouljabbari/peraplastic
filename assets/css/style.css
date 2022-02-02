@@ -1385,7 +1385,7 @@ input::placeholder {
     color: #fff;
 }
 
-.dv-gallery-overlay-on-image{
+.dv-gallery-overlay-on-image {
     transition: all 0.3s linear;
     opacity: 0;
     position: absolute;
@@ -1393,7 +1393,7 @@ input::placeholder {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(46,56,83,0.64);
+    background-color: rgba(46, 56, 83, 0.64);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -1402,11 +1402,11 @@ input::placeholder {
     padding: 1em 3em;
 }
 
-.dv-gallery-image-parent:hover .dv-gallery-overlay-on-image{
+.dv-gallery-image-parent:hover .dv-gallery-overlay-on-image {
     opacity: 1;
 }
 
-.dv-gallery-overlay-title{
+.dv-gallery-overlay-title {
     font-size: 20px;
     line-height: 27px;
     margin-bottom: 1.5em;
@@ -1414,7 +1414,7 @@ input::placeholder {
     font-style: normal;
 }
 
-.dv-gallery-overlay-text{
+.dv-gallery-overlay-text {
     font-size: 16px;
     line-height: 21px;
     font-weight: 500;
@@ -1422,7 +1422,7 @@ input::placeholder {
     text-align: center;
 }
 
-.dv-gallery-overlay-link{
+.dv-gallery-overlay-link {
     background-color: #D15F2E;
     position: absolute;
     bottom: 0;
@@ -1436,31 +1436,31 @@ input::placeholder {
     padding: 1.85em 0 0 1.7em;
 }
 
-.dv-gallery-overlay-link span{
+.dv-gallery-overlay-link span {
     z-index: 1;
 }
 
-.dv-gallery-overlay-link span:before{
+.dv-gallery-overlay-link span:before {
     color: #fff;
     font-size: 1.3em;
     font-weight: 400;
 }
 
-.dv-notfound-title{
+.dv-notfound-title {
     font-size: 183px;
     line-height: 200px;
     color: var(--custom-green);
     font-weight: bold;
 }
 
-.dv-notfound-text{
+.dv-notfound-text {
     font-size: 25px;
     line-height: 33px;
     font-weight: 500;
     font-style: normal;
 }
 
-.dv-notfound-btn{
+.dv-notfound-btn {
     color: #fff;
     background-color: var(--custom-green);
     padding: 1.2em 1.5em;
@@ -1469,9 +1469,81 @@ input::placeholder {
     transition: all 0.3s linear;
 }
 
-.dv-notfound-btn:hover{
+.dv-notfound-btn:hover {
     color: #fff;
     background-color: forestgreen;
+}
+
+.dv-address-bg {
+    background: #F3F3F3;
+    border-radius: 12px;
+    padding: 1.5em 8em 0.5em 1em;
+}
+
+.dv-address-bg h2 {
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--dark-content);
+}
+
+.dv-address-icon {
+    width: 30px;
+}
+
+.dv-address-icon span {
+    line-height: 36px;
+}
+
+.dv-address-icon span:before {
+    color: var(--custom-green);
+}
+
+.dv-address-value {
+    width: calc(100% - 30px);
+    font-size: 1em;
+    line-height: 35px;
+    color: var(--dark-content);
+    margin-bottom: 0;
+}
+
+.dv-contact-us-input {
+    background: #F3F3F3;
+    border-radius: 12px;
+    padding: 0.7em 0.5em;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--dark-content);
+    width: 85%;
+    border: none !important;
+    outline: none;
+    margin-bottom: 0.75em;
+}
+
+.dv-contact-us-input::placeholder {
+    color: #BEBEBE;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.dv-contact-us-btn{
+    background: var(--custom-green);
+    color: #fff;
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    padding: 1em 3em;
+    transition: all 0.3s linear;
+}
+
+.dv-contact-us-btn:hover{
+    background: forestgreen;
+}
+
+#contact_location {
+    height: 265px;
+    width: 85%;
+    border-radius: 12px;
 }
 
 /***************    Font Family   ***************************/
@@ -1494,14 +1566,15 @@ h2.dv-f-semiBold {
 /*Poppins Medium*/
 .dv-dark-bg-h4, .dv-dark-bg-p, .dv-sign-up-text, .dv-footer-h2-title,
 .dv-footer-list-title, .dv-blog-tags-title, .apexcharts-title-text, .dv-gallery-nav-pills .nav-item .nav-link,
-.dv-gallery-overlay-title , .dv-notfound-text{
+.dv-gallery-overlay-title, .dv-notfound-text {
     font-family: "Poppins Medium";
 }
 
 /*Poppins Light*/
 .dv-blog-card-body p, .dv-footer-input::placeholder, .dv-service-item-title,
 .dv-copyright-text, .dv-blog-post-icon-title, .dv-blog-post-p, .dv-blog-post-button,
-.dv-blog-pagination .page-item .page-link, .dv-overlay-on-similar-image p {
+.dv-blog-pagination .page-item .page-link, .dv-overlay-on-similar-image p,
+.dv-contact-us-input::placeholder , .dv-contact-us-btn{
     font-family: "Poppins Light";
 }
 
@@ -1608,6 +1681,10 @@ h2.dv-f-semiBold {
 }
 
 @media (max-width: 992px) {
+
+    .dv-contact-us-input , #contact_location{
+        width: 100%;
+    }
 
     .dv-menu-in-mobile {
         position: fixed;
@@ -1810,11 +1887,15 @@ h2.dv-f-semiBold {
     .dv-custom-px {
         padding: 0 1.25em;
     }
+
+    .dv-address-bg {
+        padding: 1.5em 1em 0.5em 1em;
+    }
 }
 
 @media (max-width: 576px) {
 
-    .dv-gallery-nav-pills .nav-item .nav-link{
+    .dv-gallery-nav-pills .nav-item .nav-link {
         padding: 0.5em;
         font-size: 0.85em;
     }
@@ -1844,5 +1925,23 @@ h2.dv-f-semiBold {
 
     .dv-footer-list li {
         margin-bottom: 0.7em;
+    }
+
+    .dv-address-bg h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .dv-address-value {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .dv-address-icon span {
+        line-height: 26px;
+    }
+
+    .dv-light-space-between-sections {
+        height: 30px;
     }
 }
