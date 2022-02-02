@@ -511,7 +511,7 @@ ul {
 
 .dv-banner-title h1 {
     margin-bottom: 1.7em;
-    font-family: 'Poppins Medium' !important;
+    font-family: 'Poppins Medium';
     line-height: 96px;
 }
 
@@ -1446,6 +1446,34 @@ input::placeholder {
     font-weight: 400;
 }
 
+.dv-notfound-title{
+    font-size: 183px;
+    line-height: 200px;
+    color: var(--custom-green);
+    font-weight: bold;
+}
+
+.dv-notfound-text{
+    font-size: 25px;
+    line-height: 33px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dv-notfound-btn{
+    color: #fff;
+    background-color: var(--custom-green);
+    padding: 1.2em 1.5em;
+    font-size: 14px;
+    line-height: 19px;
+    transition: all 0.3s linear;
+}
+
+.dv-notfound-btn:hover{
+    color: #fff;
+    background-color: forestgreen;
+}
+
 /***************    Font Family   ***************************/
 h2.dv-f-medium {
     font-family: 'Poppins Medium';
@@ -1466,7 +1494,7 @@ h2.dv-f-semiBold {
 /*Poppins Medium*/
 .dv-dark-bg-h4, .dv-dark-bg-p, .dv-sign-up-text, .dv-footer-h2-title,
 .dv-footer-list-title, .dv-blog-tags-title, .apexcharts-title-text, .dv-gallery-nav-pills .nav-item .nav-link,
-.dv-gallery-overlay-title {
+.dv-gallery-overlay-title , .dv-notfound-text{
     font-family: "Poppins Medium";
 }
 
