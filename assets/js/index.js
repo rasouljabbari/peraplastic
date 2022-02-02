@@ -92,7 +92,7 @@ let indexBlogSwiper = new Swiper(".indexBlogSwiper", {
             slidesPerView: 1,
             spaceBetween: 0,
         },
-        450: {
+        576: {
             slidesPerView: 2,
             spaceBetween: 20,
         },
@@ -117,13 +117,13 @@ let indexBlogSwiper = new Swiper(".indexBlogSwiper", {
 let indexMemberSwiper = new Swiper(".indexMemberSwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
-    autoplay: true,
+    // autoplay: true,
     breakpoints: {
         0: {
             slidesPerView: 1,
             spaceBetween: 0,
         },
-        450: {
+        576: {
             slidesPerView: 2,
             spaceBetween: 30,
         },
