@@ -109,6 +109,26 @@
 .dv-rtl .dv-address-bg{
     padding: 1.5em 1em 0.5em 8em;
 }
+
+.dv-rtl .dv-about-us-title{
+    margin-left: 0;
+    margin-right: 0.4em;
+}
+
+.dv-rtl .dv-custom-pl{
+    padding: 0 80px 0 0;
+}
+
+.dv-dots-wrapper{
+    left: 0;
+    right: auto;
+    width: 430px;
+    height: 430px;
+}
+.dv-rtl .dv-experience-pl {
+    padding-right: 10em;
+    padding-left: 0;
+}
 @media (min-width: 992px) {
     .dv-rtl .dv-blog-posts .dv-blog-posts-item:nth-child(odd) {
         direction: rtl;
@@ -151,5 +171,12 @@
 
     .dv-rtl .dv-address-bg{
         padding: 1.5em 1em 0.5em 1em;
+    }
+    .dv-rtl .dv-custom-pl{
+        padding: 0 10px 0 0;
+    }
+
+    .dv-rtl .dv-experience-pl{
+        padding-right: 0;
     }
 }
