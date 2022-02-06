@@ -100,19 +100,21 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, .9);
+    background: url(../images/1920-back.png);
     transition: 1s .4s;
     opacity: 0.85 !important;
 }
 
 #progress {
     transition: all .3s linear;
-    height: 100%;
-    width: 100% !important;
-    background: url(../images/loader.webp);
+    height: 180px;
+    width: 600px !important;
+    background: url(../images/1920-logo.png);
     background-size: 100% 100% !important;
     position: absolute;
-    top: 0
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #overlay img {
@@ -418,8 +420,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dv-custom-navbar {
-    background: rgba(16, 16, 16, .8) !important;
-    height: 130px
+    background: transparent !important;
+    height: 130px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+.dv-custom-navbar-bg-dark {
+    background-color: rgba(16, 16, 16, .9) !important;
+    z-index: 9;
+    height: 115px;
+}
+.productsTopSlider ,.indexMemberSwiper ,.indexBlogSwiper,.indexCertificateSwiper,.indexProductsSwiper{
+    z-index: 0;
+}
+
+.dv-custom-navbar-bg-dark .navbar-brand{
+    width: 220px;
+    height: 80px;
+    margin-top: -25px;
 }
 
 .dv-language-select .dropdown-toggle {
@@ -542,7 +562,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dv-custom-mt-another-page {
-    padding-top: 430px
+    padding-top: 560px
 }
 
 .z-index-1 {
@@ -1730,7 +1750,7 @@ h2.dv-f-semiBold {
         z-index: 1000;
         justify-content: space-between;
         height: 120px;
-        background: rgba(16, 16, 16, .8)
+        background: transparent;
     }
 
     .hamburger.is-closed .hamb-bottom, .hamburger.is-closed .hamb-middle, .hamburger.is-closed .hamb-top {
@@ -1935,8 +1955,15 @@ h2.dv-f-semiBold {
         height: 280px
     }
 
+    #overlay {
+        background: url(../images/600-back.png);
+    }
+
     #progress {
-        background: url(../images/mini-loader.webp)
+        height: 130px;
+        max-width: 450px;
+        width: 100% !important;
+        background: url(../images/600-logo.png);
     }
 }
 
@@ -2052,5 +2079,22 @@ h2.dv-f-semiBold {
 
     .dv-footer-button {
         width: 35%
+    }
+
+    #progress {
+        height: 130px;
+        max-width: 360px;
+        width: 100% !important;
+        background: url(../images/600-logo.png);
+    }
+}
+
+@media (max-width: 360px) {
+
+    #progress {
+        height: 130px;
+        max-width: 320px;
+        width: 100% !important;
+        background: url(../images/600-logo.png);
     }
 }
