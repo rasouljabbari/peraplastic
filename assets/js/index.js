@@ -136,7 +136,7 @@ $(document).scroll(function() {
             $('.dv-menu-in-mobile').removeClass('dv-custom-navbar-bg-dark');
         }
     }else{
-        if (scrollY >= 800) {
+        if (scrollY >= 500) {
             $('.dv-custom-navbar').addClass('dv-custom-navbar-bg-dark');
             $('.dv-menu-in-mobile').addClass('dv-custom-navbar-bg-dark');
         } else {

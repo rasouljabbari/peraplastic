@@ -495,7 +495,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dv-top-green-btn, .dv-top-white-btn {
-    padding: .75em 1.8em;
+    padding: 1em 1.8em;
     border-radius: 5px;
     border: none;
     transition: all .3s linear;
@@ -504,7 +504,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .dv-top-green-btn {
     background: var(--custom-green);
-    color: #fff !important
+    color: #fff !important;
+    transition: all 0.3s linear;
+}
+
+.dv-top-green-btn:hover {
+    background-color: #2f8b24;
 }
 
 .dv-top-white-btn {
@@ -535,7 +540,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dv-custom-mt-export {
-    margin-top: 820px
+    margin-top: 960px;
 }
 
 .dv-header-another-page-top-banner {
@@ -632,7 +637,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .3s linear
+    transition: all .3s linear;
+    text-align: center;
 }
 
 .dv-dark-bg-square:hover {
@@ -720,7 +726,8 @@ h1, h2, h3, h4, h5, h6 {
 .dv-blog-read-more {
     color: var(--custom-green) !important;
     font-size: 20px;
-    line-height: 27px
+    line-height: 27px;
+    font-weight: 500;
 }
 
 .dv-blog-line-under-link {
@@ -1499,7 +1506,7 @@ input::placeholder {
 .dv-contact-us-input {
     background: #f3f3f3;
     border-radius: 12px;
-    padding: .7em .5em;
+    padding: .7em 1em;
     font-size: 18px;
     line-height: 24px;
     color: var(--dark-content);
@@ -1533,7 +1540,8 @@ input::placeholder {
 #contact_location {
     height: 265px;
     width: 85%;
-    border-radius: 12px
+    border-radius: 12px;
+    z-index: 0;
 }
 
 .dv-about-us-title {
@@ -1608,7 +1616,7 @@ h2.dv-f-semiBold {
     font-family: "Poppins Light"
 }
 
-.dv-blog-read-more, .dv-member-info h6 {
+.dv-member-info h6 {
     font-family: "Poppins SemiBold"
 }
 
