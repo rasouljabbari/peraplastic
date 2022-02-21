@@ -432,11 +432,12 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 9;
     height: 115px;
 }
-.productsTopSlider ,.indexMemberSwiper ,.indexBlogSwiper,.indexCertificateSwiper,.indexProductsSwiper{
+
+.productsTopSlider, .indexMemberSwiper, .indexBlogSwiper, .indexCertificateSwiper, .indexProductsSwiper {
     z-index: 0;
 }
 
-.dv-custom-navbar-bg-dark .navbar-brand{
+.dv-custom-navbar-bg-dark .navbar-brand {
     width: 220px;
     height: 80px;
     margin-top: -25px;
@@ -675,7 +676,13 @@ h1, h2, h3, h4, h5, h6 {
 .img-cover {
     width: 100%;
     height: 100%;
-    object-fit: cover
+    object-fit: cover;
+}
+
+.img-contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .dv-blog-card {
@@ -1305,7 +1312,9 @@ input::placeholder {
 }
 
 .dv-similar-image-parent {
-    height: 510px
+    height: 472px;
+    border: 1px solid rgba(229, 229, 229, 0.76);
+    border-radius: 5px;
 }
 
 .dv-overlay-on-similar-image {
@@ -1317,11 +1326,16 @@ input::placeholder {
     transition: all .3s linear;
     position: absolute;
     top: 0;
-    left: 0
+    left: 0;
+    border-radius: 5px;
 }
 
 .dv-similar-image-parent:hover .dv-overlay-on-similar-image {
-    opacity: 1
+    opacity: 1;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: rgba(64,156,33,0.7);
 }
 
 .dv-overlay-on-similar-image p {
@@ -1620,6 +1634,32 @@ h2.dv-f-semiBold {
     font-family: "Poppins SemiBold"
 }
 
+.dv-product-card-body{
+    padding: 1.5em 0;
+}
+
+.dv-product-card-body h2{
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--dark-content);
+    font-family: 'Poppins Regular';
+    margin-bottom: 1em;
+}
+
+.dv-product-card-link{
+    padding : 1em 0.75em;
+    color: #fff !important;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Poppins Light';
+    border-radius: 12px;
+    background: var(--custom-green);
+    transition: all 0.3s linear;
+    border: none;
+}
+.dv-product-card{
+    height : fit-content;
+}
 @media (min-width: 1919px) {
     .dv-footer-list li .dv-service-item-title {
         font-size: 20px
@@ -1831,6 +1871,17 @@ h2.dv-f-semiBold {
 }
 
 @media (max-width: 768px) {
+
+    .dv-overlay-on-similar-image{
+    padding : 20px;
+    }
+
+    .dv-product-card-link{
+        padding : 0.7em 0.5em;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
     .SimilarProductSlider, .productsTopSlider {
         padding: 0 0 3em 0
     }
