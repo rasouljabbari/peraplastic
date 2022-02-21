@@ -1317,6 +1317,12 @@ input::placeholder {
     border-radius: 5px;
 }
 
+.dv-category-products {
+    height: 356px;
+    border: 1px solid rgba(229, 229, 229, 0.76);
+    border-radius: 5px;
+}
+
 .dv-overlay-on-similar-image {
     background-color: rgba(22, 22, 22, .56);
     width: 100%;
@@ -1330,12 +1336,28 @@ input::placeholder {
     border-radius: 5px;
 }
 
-.dv-similar-image-parent:hover .dv-overlay-on-similar-image {
-    opacity: 1;
+.dv-overlay-on-similar-image h2 {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left : 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    font-size: 24px;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    background-color: rgba(64,156,33,0.7);
+.dv-similar-image-parent:hover .dv-overlay-on-similar-image, .dv-category-products:hover .dv-overlay-on-similar-image {
+    opacity: 1;
+    height: 100%;
+}
+
+.dv-category-products:hover .dv-overlay-on-similar-image{
+    padding : 25px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: rgba(64, 156, 33, 0.7);
 }
 
 .dv-overlay-on-similar-image p {
@@ -1634,11 +1656,11 @@ h2.dv-f-semiBold {
     font-family: "Poppins SemiBold"
 }
 
-.dv-product-card-body{
+.dv-product-card-body {
     padding: 1.5em 0;
 }
 
-.dv-product-card-body h2{
+.dv-product-card-body h2 {
     font-size: 18px;
     line-height: 27px;
     color: var(--dark-content);
@@ -1646,8 +1668,8 @@ h2.dv-f-semiBold {
     margin-bottom: 1em;
 }
 
-.dv-product-card-link{
-    padding : 1em 0.75em;
+.dv-product-card-link {
+    padding: 1em 0.75em;
     color: #fff !important;
     font-size: 18px;
     line-height: 27px;
@@ -1657,9 +1679,11 @@ h2.dv-f-semiBold {
     transition: all 0.3s linear;
     border: none;
 }
-.dv-product-card{
-    height : fit-content;
+
+.dv-product-card {
+    height: fit-content;
 }
+
 @media (min-width: 1919px) {
     .dv-footer-list li .dv-service-item-title {
         font-size: 20px
@@ -1872,12 +1896,12 @@ h2.dv-f-semiBold {
 
 @media (max-width: 768px) {
 
-    .dv-overlay-on-similar-image{
-    padding : 20px;
+    .dv-overlay-on-similar-image {
+        padding: 20px;
     }
 
-    .dv-product-card-link{
-        padding : 0.7em 0.5em;
+    .dv-product-card-link {
+        padding: 0.7em 0.5em;
         font-size: 16px;
         line-height: 24px;
     }
